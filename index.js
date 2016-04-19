@@ -22,6 +22,14 @@ module.exports = function(options) {
       var headers = _.clone(req.headers);
       headers.host = targetInfo.host;
 
+      // Remove headers from forwarding request that will differ
+      // in new request to backend. This is to help the AWS signature
+      // to match
+      delete headers['connection'];
+      delete headers['x-forwarded-for'];
+      delete headers['x-forwarded-proto'];
+      delete headers['x-forwarded-port'];
+
       var opts = {
         host: targetInfo.host,
         path: req.originalUrl,
