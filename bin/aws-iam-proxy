@@ -3,14 +3,14 @@
 var iamProxy = require('../');
 
 var options = {
-  port: process.env.PORT || 8000
+  port: process.env.PORT || 8000,
   target: process.env.AWS_ENDPOINT
 };
 
 // Do we have any basic auth credentials to protect the proxy with?
 if (process.env.USERNAME || process.env.PASSWORD) {
-  options.username = process.env.USERNAME;
-  options.password = process.env.PASSWORD;
+  options.username = process.env.USERNAME,
+  options.password = process.env.PASSWORD
 }
 
 var proxy = iamProxy(options);
