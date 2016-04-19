@@ -4,6 +4,7 @@ var proxilate = require('proxilate');
 var url = require('url');
 var AWS = require('aws-sdk');
 var aws4 = require('aws4');
+var _ = require('lodash');
 
 // Pull credentials from AWS metadata api or env variables
 var chain = new AWS.CredentialProviderChain();
@@ -18,7 +19,7 @@ module.exports = function(options) {
       }
 
       var targetInfo = url.parse(options.target);
-      var headers = req.headers;
+      var headers = _.clone(req.headers);
       headers.host = targetInfo.host;
 
       var opts = {
@@ -31,7 +32,8 @@ module.exports = function(options) {
 
       var creds = {
         accessKeyId: credentials.accessKeyId,
-        secretAccessKey: credentials.secretAccessKey
+        secretAccessKey: credentials.secretAccessKey,
+        sessionToken: credentials.sessionToken
       }
 
       var signer = aws4.sign(opts, creds);
