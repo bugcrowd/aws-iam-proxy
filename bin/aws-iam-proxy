@@ -8,9 +8,9 @@ var options = {
 };
 
 // Do we have any basic auth credentials to protect the proxy with?
-if (process.env.USERNAME || process.env.PASSWORD) {
-  options.username = process.env.USERNAME,
-  options.password = process.env.PASSWORD
+if (process.env.PROXY_USERNAME || process.env.PROXY_PASSWORD) {
+  options.username = process.env.PROXY_USERNAME,
+  options.password = process.env.PROXY_PASSWORD
 }
 
 var proxy = iamProxy(options);
