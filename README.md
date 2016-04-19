@@ -27,5 +27,7 @@ Supported ENV variables:
   Basic Auth password to protect this proxy with
 
 - AWS_ACCESS_KEY_ID (optional)
+
 - AWS_SECRET_ACCESS_KEY (optional)
+
 - AWS_REGION (optional)
