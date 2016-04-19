@@ -1,6 +1,6 @@
 {
   "name": "aws-iam-proxy",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A proxy that signs the requests passing through with iam credentials. These credentials could come from an instance profile or ENV vars.",
   "main": "index.js",
   "bin": "./bin/aws-iam-proxy",
