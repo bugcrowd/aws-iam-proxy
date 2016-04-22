@@ -11,7 +11,7 @@ Installation
 Usage
 -----
 
-`$ iamproxy`
+`$ aws-iam-proxy`
 
 Supported ENV variables:
 - AWS_ENDPOINT (required)
