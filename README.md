@@ -12,7 +12,9 @@ Installation
 ------------
 
 `$ npm install aws-iam-proxy -g`
-`# ln -s /usr/bin/nodejs /usr/bin/node`   # In ubuntu systems
+
+`# ln -s /usr/bin/nodejs /usr/bin/node`   *In ubuntu systems*
+
 `$ npm install`
 
 Usage
