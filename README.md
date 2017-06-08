@@ -3,20 +3,16 @@ AWS IAM Proxy
 
 This proxy signs requests with AWS IAM credentials. It will search for IAM credentials from the AWS metadata api and environment variables. Useful if you wish to expose aws services to clients that can not sign their requests.
 
+Dependencies
+------------
+- nodejs
+- npm
+
 Installation
 ------------
 
 `$ npm install aws-iam-proxy -g`
-
-
-Dependencies
-------------
--nodejs
--npm
-
-
-in Ubuntu:
-`# ln -s /usr/bin/nodejs /usr/bin/node`
+`# ln -s /usr/bin/nodejs /usr/bin/node`   # In ubuntu systems
 `$ npm install`
 
 Usage
