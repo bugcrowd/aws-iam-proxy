@@ -8,6 +8,17 @@ Installation
 
 `$ npm install aws-iam-proxy -g`
 
+
+Dependencies
+------------
+-nodejs
+-npm
+
+
+in Ubuntu:
+`# ln -s /usr/bin/nodejs /usr/bin/node`
+`$ npm install`
+
 Usage
 -----
 
