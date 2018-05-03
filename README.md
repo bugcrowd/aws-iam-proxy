@@ -25,10 +25,10 @@ Supported ENV variables:
 - PORT (optional, default 8000)
   The port to run this proxy on
 
-- USERNAME (optional)
+- PROXY_USERNAME (optional)
   Basic Auth username to protect this proxy with
 
-- PASSWORD (optional)
+- PROXY_PASSWORD (optional)
   Basic Auth password to protect this proxy with
 
 - AWS_ACCESS_KEY_ID (optional)
