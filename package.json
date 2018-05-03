@@ -19,7 +19,7 @@
     "aws-sdk": "^2.3.0",
     "aws4": "^1.3.2",
     "lodash": "^4.11.1",
-    "proxilate": "^0.3.4"
+    "proxilate": "^0.3.5"
   },
   "devDependencies": {
     "eventemitter2": "^1.0.0",
