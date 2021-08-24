@@ -1,7 +1,8 @@
 {
-  "name": "aws-iam-proxy",
-  "version": "0.1.11",
+  "name": "@bugcrowd/aws-iam-proxy",
+  "version": "0.1.12",
   "description": "A proxy that signs the requests passing through with iam credentials. These credentials could come from an instance profile or ENV vars.",
+  "repository": "https://github.com/bugcrowd/aws-iam-proxy",
   "main": "index.js",
   "bin": "./bin/aws-iam-proxy",
   "scripts": {
@@ -18,7 +19,7 @@
   "dependencies": {
     "aws-sdk": "^2.382.0",
     "aws4": "^1.8.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "proxilate": "^0.3.6"
   },
   "devDependencies": {
