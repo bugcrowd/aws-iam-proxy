@@ -11,7 +11,9 @@ Dependencies
 Installation
 ------------
 
-`$ npm install aws-iam-proxy -g`
+**NOTE:** We have moved the package under our `bugcrowd` NPM organization - this will be the only package location maintained going forward.
+
+`$ npm install @bugcrowd/aws-iam-proxy -g`
 
 Usage
 -----
